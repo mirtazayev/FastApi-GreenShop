@@ -24,4 +24,4 @@ app.include_router(auth_router.router)
 Base.metadata.create_all(bind=engine)
 
 if __name__ == '__main__':
-    uvicorn.run(app='main:app', port=8000, reload=True)
+    uvicorn.run(app='main:app', reload=True)
